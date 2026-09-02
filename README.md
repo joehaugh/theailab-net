@@ -80,28 +80,40 @@ pytest tests/test_integration_links.py::TestNavConsistency::test_nav_links_resol
 
 ## Deployment
 
-The site deploys to Netlify automatically on every push to `main` via
-[`.github/workflows/deploy-netlify.yml`](.github/workflows/deploy-netlify.yml).
-The workflow publishes the repository root and requires two repository
-secrets, set under **Settings → Secrets and variables → Actions**:
+### GitHub Pages (no configuration required)
+
+[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+runs the test suite and then publishes the repository root to GitHub Pages on
+every push to `main`. To enable it once: **Settings → Pages → Build and
+deployment → Source → GitHub Actions**. The site then serves at
+`https://<owner>.github.io/theailab-net/`. Pages serves `404.html`
+automatically for unknown paths. Deployment can also be triggered manually
+from the Actions tab (`workflow_dispatch`).
+
+### Netlify (optional alternative)
+
+[`.github/workflows/deploy-netlify.yml`](.github/workflows/deploy-netlify.yml)
+publishes the same root to Netlify on push to `main`. It requires two
+repository secrets under **Settings → Secrets and variables → Actions**:
 
 | Secret | Description |
 |---|---|
 | `NETLIFY_AUTH_TOKEN` | A Netlify personal access token |
 | `NETLIFY_SITE_ID` | The target Netlify site's API ID |
 
-Until those secrets are configured, the workflow run will fail at the deploy
-step — everything else (checkout) will still succeed. Deployment can also be
-triggered manually from the Actions tab (`workflow_dispatch`).
+Until those secrets are configured this workflow fails at the deploy step. If
+you deploy via Pages, you can delete `deploy-netlify.yml` and `netlify.toml`.
 
 ## Content Source and Provenance
 
 All course content (syllabus text, schedule, assignments, policies) is
-sourced from the official Fall 2026 syllabus. The page layout, navigation
-pattern, and stylesheet are adapted from a prior Kenyon course site
-([`programminghumanity-org`](https://github.com/jon-chun)) for visual
-consistency across Jon Chun's Kenyon course sites; no course content from
-that site is reused here.
+sourced from the official Fall 2026 syllabus. The visual system — cream
+ground, deep petrol accent, Instrument Serif display type over DM Sans,
+hairline rules and a wide reading measure — is adapted from the instructor's
+site, [jonachun.com](https://jonachun.com/), for visual consistency across
+Jon Chun's Kenyon web presence; no content from that site is reused here.
+Web fonts load from Google Fonts with a serif/sans fallback stack, so the
+site still reads correctly offline or if the CDN is blocked.
 
 ## License
 
