@@ -84,9 +84,10 @@ pytest tests/test_integration_links.py::TestNavConsistency::test_nav_links_resol
 
 [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
 runs the test suite and then publishes the repository root to GitHub Pages on
-every push to `main`. To enable it once: **Settings → Pages → Build and
-deployment → Source → GitHub Actions**. The site then serves at
-`https://<owner>.github.io/theailab-net/`. Pages serves `404.html`
+every push to `main`. The workflow enables Pages itself
+(`actions/configure-pages` with `enablement: true`), so no manual
+**Settings → Pages** step is needed. The site serves at
+`https://<owner>.github.io/theailab-net/`, and Pages serves `404.html`
 automatically for unknown paths. Deployment can also be triggered manually
 from the Actions tab (`workflow_dispatch`).
 
