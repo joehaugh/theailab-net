@@ -97,11 +97,13 @@ triggered manually from the Actions tab (`workflow_dispatch`).
 ## Content Source and Provenance
 
 All course content (syllabus text, schedule, assignments, policies) is
-sourced from the official Fall 2026 syllabus. The page layout, navigation
-pattern, and stylesheet are adapted from a prior Kenyon course site
-([`programminghumanity-org`](https://github.com/jon-chun)) for visual
-consistency across Jon Chun's Kenyon course sites; no course content from
-that site is reused here.
+sourced from the official Fall 2026 syllabus. The visual system — cream
+ground, deep petrol accent, Instrument Serif display type over DM Sans,
+hairline rules and a wide reading measure — is adapted from the instructor's
+site, [jonachun.com](https://jonachun.com/), for visual consistency across
+Jon Chun's Kenyon web presence; no content from that site is reused here.
+Web fonts load from Google Fonts with a serif/sans fallback stack, so the
+site still reads correctly offline or if the CDN is blocked.
 
 ## License
 

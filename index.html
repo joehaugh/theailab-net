@@ -5,7 +5,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
 <title>Home – IPHS 400: Frontiers in AI</title>
+<meta content="IPHS 400: Frontiers in AI — a hands-on Kenyon College course in AI software engineering: configuring, extending, and orchestrating autonomous coding agents through a professional software development lifecycle." name="description"/>
 <link href="css/style.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header no-featured-image">
@@ -20,33 +24,94 @@
 <li><a href="core/about.html">About</a></li>
 </ul></nav>
 </div>
-<section class="hero"><h1>Home</h1></section></header>
+<section class="hero hero-home">
+<p class="hero-kicker">Kenyon College · IPHS · Fall 2026</p>
+<h1>Frontiers in <em>AI</em></h1>
+<p class="hero-lede">A hands-on study of the AI frontier as it stands in late 2026: <strong>AI software engineering</strong> &mdash; configuring, extending, and orchestrating autonomous coding agents through a professional software development lifecycle.</p>
+</section>
+</header>
 
-<main class="content-wrapper">
+<main class="content-wrapper wide">
 <div class="page-content">
-<p>Welcome to <strong>IPHS 400: Frontiers in AI</strong> at Kenyon College. This upper-division course is a hands-on study of the AI frontier as it stands in late 2026: <strong>AI software engineering (AI-SWE)</strong>, coordinating autonomous coding agents through a professional software development lifecycle. You build this competency through four mini-projects that stack on each other — your own development environment, agent configuration and custom Skills, agent harness/hook engineering, and a spec-driven SDLC capstone — before applying the whole toolchain to an original interdisciplinary research project.</p>
 
-<h2>Course Details</h2>
-<table>
-<tr><th>Instructor</th><td>Jon Chun</td></tr>
-<tr><th>Schedule</th><td>Tu/Th, 2:40–4:00 PM</td></tr>
-<tr><th>Location</th><td>Timberlake #5 (Evans Conference Room)</td></tr>
-</table>
+<p>You build this competency through <strong>four mini-projects that stack on each other</strong> &mdash; your own development environment, agent configuration and custom Skills, agent harness and hook engineering, and a spec-driven SDLC capstone &mdash; before applying the whole toolchain to an original interdisciplinary research project. Running alongside the technical work is a discussion of what happens, to labor, to ethics, to what we can know, when agentic systems replace or augment knowledge work.</p>
+
+<div class="cred-grid">
+<div class="cred-card">
+<div class="cred-label">Instructor</div>
+<div class="cred-value">Jon Chun</div>
+<div class="cred-sub">Integrated Program for Humane Studies</div>
+</div>
+<div class="cred-card">
+<div class="cred-label">Meets</div>
+<div class="cred-value">Tu / Th, 2:40&ndash;4:00 PM</div>
+<div class="cred-sub">Office hours Tu/Th, 1:30&ndash;2:30 PM</div>
+</div>
+<div class="cred-card">
+<div class="cred-label">Location</div>
+<div class="cred-value">Timberlake #5</div>
+<div class="cred-sub">Evans Conference Room</div>
+</div>
+</div>
 
 <div class="section">
-<h2>Quick Links</h2>
-<ul class="item-list">
-<li><a href="core/syllabus.html">Syllabus</a></li>
-<li><a href="core/schedule.html">Schedule</a></li>
-<li><a href="core/assignments.html">Assignments</a></li>
-<li><a href="core/policies.html">Policies</a></li>
-<li><a href="core/about.html">About</a></li>
-</ul>
+<span class="section-label">The arc</span>
+<h2>Four mini-projects, then a research project</h2>
+<div class="card-grid">
+<article class="card">
+<div class="card-label">MP1 · Weeks 1&ndash;2</div>
+<div class="card-title">Development Environment</div>
+<p class="card-desc">Configure a professional, reproducible shell and terminal for agentic software engineering, with sound secrets hygiene from day one.</p>
+</article>
+<article class="card">
+<div class="card-label">MP2 · Weeks 3&ndash;5</div>
+<div class="card-title">Agent &amp; Skills Configuration</div>
+<p class="card-desc">Package reusable Claude Code customizations &mdash; Skills, slash commands, subagents &mdash; into a small plugin a classmate can install.</p>
+</article>
+<article class="card">
+<div class="card-label">MP3 · Weeks 6&ndash;9</div>
+<div class="card-title">Harness &amp; Hooks</div>
+<p class="card-desc">Wire lifecycle hooks so the agent formats, logs, injects repo state, and blocks dangerous commands whether or not the model &ldquo;remembers&rdquo; the rules.</p>
+</article>
+<article class="card">
+<div class="card-label">MP4 · Weeks 10&ndash;13</div>
+<div class="card-title">SDLC Capstone</div>
+<p class="card-desc">Take a real web application from ideation to MVP through a full spec-driven lifecycle: plan, decompose, implement, test, review, deploy.</p>
+</article>
 </div>
+<p>Weeks 14&ndash;15 are given over to an <a href="core/assignments.html">original interdisciplinary Final Project</a> and its research-poster presentation.</p>
+</div>
+
+<div class="section">
+<span class="section-label">Start here</span>
+<h2>Course materials</h2>
+<div class="card-grid">
+<article class="card">
+<div class="card-title"><a href="core/syllabus.html">Syllabus &rarr;</a></div>
+<p class="card-desc">Course description, learning outcomes, required accounts, assignment weights, and grading scale.</p>
+</article>
+<article class="card">
+<div class="card-title"><a href="core/schedule.html">Schedule &rarr;</a></div>
+<p class="card-desc">All fifteen weeks, grouped by mini-project, with key dates from the Kenyon academic calendar.</p>
+</article>
+<article class="card">
+<div class="card-title"><a href="core/assignments.html">Assignments &rarr;</a></div>
+<p class="card-desc">Full mini-project briefs, the Final Project requirements, and the MP3 &amp; MP4 grading rubric.</p>
+</article>
+<article class="card">
+<div class="card-title"><a href="core/policies.html">Policies &rarr;</a></div>
+<p class="card-desc">The Generative AI Use Policy, late work, attendance, external sharing, and College statements.</p>
+</article>
+</div>
+<p>Quizzes, grades, and submissions are handled on Moodle. See <a href="core/about.html">About</a> for the course&rsquo;s background and provenance.</p>
+</div>
+
 </div>
 </main>
 <footer class="site-footer">
 <p>IPHS 400: Frontiers in AI · Kenyon College</p>
+<p>Integrated Program for Humane Studies · Fall 2026 · Instructor <a href="https://jonachun.com/">Jon Chun</a></p>
+<p>Course materials on <a href="https://github.com/jon-chun/theailab-net">GitHub</a>. Quizzes, grades, and submissions on Moodle.</p>
 </footer>
 </body>
 </html>
